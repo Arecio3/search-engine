@@ -10,6 +10,7 @@ module.exports = {
       'secondary': "#EA4335",
       'third': "#FBBC05",
       'fourth': '#34A853',
+      'light': "#ffff"
     },
   },
   variants: {

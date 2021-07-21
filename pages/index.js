@@ -15,12 +15,12 @@ export default function Home() {
         {/* Left */}
         {/* x-4 spaces all children with 4 */}
         <div className="flex space-x-4 items-center">
-          <p className="link rounded-md p-1 hover:text-white">About</p>
-          <p className="link rounded-md p-1 hover:text-white">Store</p>
+          <p className="link rounded-md p-1 transition duration-300 ease-in-out hover:text-light">About</p>
+          <p className="link rounded-md p-1 duration-300 ease-in-out hover:text-light">Store</p>
         </div>
         <div className="flex space-x-4 items-center">
-          <p className="link rounded-md p-1 hover:text-white">Gmail</p>
-          <p className="link rounded-md p-1 hover:text-white">Images</p>
+          <p className="link rounded-md p-1 duration-300 ease-in-out hover:text-light">Gmail</p>
+          <p className="link rounded-md p-1 duration-300 ease-in-out hover:text-light">Images</p>
 
           {/* Icon */}
           <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
@@ -30,7 +30,7 @@ export default function Home() {
       </header>
 
       {/* Body */}
-      <form className="flex flex-col items-center mt-44">
+      <form className="flex flex-col items-center mt-44 flex-grow">
         <h1 className="text-8xl tracking-wide">
           <span className="text-primary">S</span>
           <span className="text-secondary">e</span>
@@ -45,7 +45,14 @@ export default function Home() {
           <input type="text" className="flex-grow focus:outline-none" />
           <MicrophoneIcon className="h-5" />
         </div>
+
+        <div className="flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4">
+          <button className="btn">Searchy Search</button>
+          <button className="btn" style={{margin: 8}}>I'm Feeling Lucky</button>
+        </div>
       </form>
+
+      <Footer />
     </div>
   );
 }
