@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Avatar from '../components/Avatar'
 
 export default function Home() {
   return (
@@ -12,16 +13,17 @@ export default function Home() {
         {/* Left */}
         {/* x-4 spaces all children with 4 */}
         <div className="flex space-x-4 items-center">
-          <p>About</p>
-          <p>Store</p>
+          <p className="link rounded-md p-1 hover:text-white">About</p>
+          <p className="link rounded-md p-1 hover:text-white">Store</p>
         </div>
         <div className="flex space-x-4 items-center">
-          <p>Gmail</p>
-          <p>Images</p>
+          <p className="link rounded-md p-1 hover:text-white">Gmail</p>
+          <p className="link rounded-md p-1 hover:text-white">Images</p>
 
           {/* Icon */}
 
           {/* Avatar */}
+          <Avatar url="https://avatarfiles.alphacoders.com/128/thumb-128984.png" />
         </div>
       </header>
     </div>

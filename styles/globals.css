@@ -1,4 +1,11 @@
 /* ./styles/globals.css */
+/* Base classes */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Inject our own styles */
+@layer components {
+  .link {
+    @apply hover:bg-blue-500 cursor-pointer;
+  }
+}
