@@ -1,6 +1,8 @@
-import Head from 'next/head'
-import Avatar from '../components/Avatar'
-import { ViewGridIcon, MicrophoneIcon } from "@heroicons/react/solid"
+import Head from "next/head";
+import Avatar from "../components/Avatar";
+import { ViewGridIcon, MicrophoneIcon } from "@heroicons/react/solid";
+import { SearchIcon } from "@heroicons/react/outline";
+
 export default function Home() {
   return (
     <div>
@@ -21,11 +23,29 @@ export default function Home() {
           <p className="link rounded-md p-1 hover:text-white">Images</p>
 
           {/* Icon */}
-            <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
+          <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
           {/* Avatar */}
           <Avatar url="https://avatarfiles.alphacoders.com/128/thumb-128984.png" />
         </div>
       </header>
+
+      {/* Body */}
+      <form className="flex flex-col items-center mt-44">
+        <h1 className="text-8xl tracking-wide">
+          <span className="text-primary">S</span>
+          <span className="text-secondary">e</span>
+          <span className="text-third">a</span>
+          <span className="text-primary">r</span>
+          <span className="text-fourth">c</span>
+          <span className="text-primary">h</span>
+          <span className="text-secondary">y</span>
+        </h1>
+        <div className="flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl">
+          <SearchIcon className="h-5 mr-4" />
+          <input type="text" className="flex-grow focus:outline-none" />
+          <MicrophoneIcon className="h-5" />
+        </div>
+      </form>
     </div>
-  )
+  );
 }

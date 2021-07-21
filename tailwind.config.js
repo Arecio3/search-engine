@@ -5,7 +5,12 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    textColor: {
+      'primary': "#4285f4",
+      'secondary': "#EA4335",
+      'third': "#FBBC05",
+      'fourth': '#34A853',
+    },
   },
   variants: {
     extend: {},
