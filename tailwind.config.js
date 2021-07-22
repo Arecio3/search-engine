@@ -11,7 +11,7 @@ module.exports = {
       'third': "#FBBC05",
       'fourth': '#34A853',
       'light': "#ffff",
-      'gray': 'text-gray-500'
+      'gray': 'text-gray-500',
     },
   },
   variants: {
