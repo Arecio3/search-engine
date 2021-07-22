@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useRef } from "react";
 import { XIcon, MicrophoneIcon, SearchIcon } from "@heroicons/react/solid";
 import HeaderFilters from "../components/HeaderFilters";
+// 
 import Avatar from "./Avatar";
 
 function Header() {
