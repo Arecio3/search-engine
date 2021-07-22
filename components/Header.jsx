@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import { useRef } from "react";
 import { XIcon, MicrophoneIcon, SearchIcon } from "@heroicons/react/solid";
 import HeaderFilters from "../components/HeaderFilters";
-// 
 import Avatar from "./Avatar";
 
 function Header() {
@@ -44,8 +43,8 @@ function Header() {
             style={{ color: "gray" }}
           />
           <MicrophoneIcon className="mr-3 h-6 hidden sm:inline-flex text-primary border-l-2 pl-4 border-gray" />
-          <SearchIcon className="h-6 hidden text-primary sm:inline-flex" />
-          <button hidden type="submit" onClick={search}>
+          <SearchIcon className="h-6 hidden text-primary sm:inline-flex cursor-pointer" onClick={search}/>
+          <button hidden type="submit" onClick={search}> 
             Search
           </button>
         </form>
