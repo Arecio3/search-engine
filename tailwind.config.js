@@ -10,7 +10,8 @@ module.exports = {
       'secondary': "#EA4335",
       'third': "#FBBC05",
       'fourth': '#34A853',
-      'light': "#ffff"
+      'light': "#ffff",
+      'gray': 'text-gray-500'
     },
   },
   variants: {
