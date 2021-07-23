@@ -26,7 +26,7 @@ function Search({ results }) {
 export default Search;
 
 export async function getServerSideProps(context) {
-    const useDummyData = true;
+    const useDummyData = false;
     const startIndex = context.query.start || "0";
     // Server side rendering
     // Makes a req to google with our credentials and we pass in the search value by the context.query.term
