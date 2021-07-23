@@ -1,3 +1,5 @@
+import PaginationButtons from "./PaginationButtons";
+
 function SearchResults({ results }) {
   return (
     // Search time/amount
@@ -20,9 +22,11 @@ function SearchResults({ results }) {
             </a>
           </div>
 
-          <p>{result.snippet}</p>
+          <p className="line-clamp-2">{result.snippet}</p>
         </div>
       ))}
+
+      <PaginationButtons />
     </div>
   );
 }
