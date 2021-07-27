@@ -30,7 +30,7 @@ export async function getServerSideProps(context) {
     const startIndex = context.query.start || "0";
     // Server side rendering
     // Makes a req to google with our credentials and we pass in the search value by the context.query.term
-    const data =  await fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.term}&start=${startIndex}`
+    const data = useDummyData ? Response : await fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.term}&start=${startIndex}`
     ).then((response) => response.json());
 
     // Pass the results to client
