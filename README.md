@@ -21,10 +21,7 @@ A Google Clone ! Called Searchy :) I wanted to be able to create a search engine
 <img src="images/searchyMobile2.png"></img>
   
   # Installation
-   **npm i**
-
-  # Testing
-  **npm test**
+   **yarn install**
 
   # Contribute
   **Create pull request**
