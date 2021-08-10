@@ -11,6 +11,11 @@
   
   # Description 
 A Google Clone ! Called Searchy :) I wanted to be able to create a search engine with googles custom search API although it is still in the first stages of development I do plan on adding more functionality to it and possibly upgrading the API but for now you can search random searches and get the correct searches back and it also grabs your current city in the bottom.
+
+<img src="images/searchy1.png"></img>
+<img src="images/searchy2.png"></img>
+<img src="images/searchyMobile1.png"></img>
+<img src="images/searchyMobile2.png"></img>
   
   # Installation
    **npm i**
